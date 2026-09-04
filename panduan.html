@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Panduan Multimedia — Multimedia Gereja Toraja Jemaat Batam Centre</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+<nav id="site-nav"></nav>
+
+<header class="page-header">
+  <div class="container">
+    <h1>Panduan Multimedia</h1>
+    <p>Panduan penggunaan perangkat dan aplikasi multimedia — ProPresenter (Canva), hingga SOP pelayanan.</p>
+  </div>
+</header>
+
+<main class="section" style="padding-top:0">
+  <div class="container">
+    <div class="toolbar">
+      <div class="search-field">
+        <input type="search" id="search-panduan" placeholder="Cari judul atau deskripsi panduan..." />
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      </div>
+      <select id="filter-kategori-panduan"><option value="">Semua Kategori</option></select>
+    </div>
+
+    <div class="card-grid" id="panduan-grid"></div>
+  </div>
+</main>
+
+<footer id="site-footer"></footer>
+
+<script type="module">
+  import { initNavbar, initFooter } from "./js/utils.js";
+  initNavbar("panduan");
+  initFooter();
+</script>
+<script type="module" src="js/panduan.js"></script>
+</body>
+</html>

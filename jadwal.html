@@ -1,0 +1,43 @@
+<!-- jadwal.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jadwal Multimedia | GeTor</title>
+<meta name="description" content="Jadwal pelayanan Tim Multimedia Gereja Toraja Jemaat Batam Centre.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<nav id="site-nav"></nav>
+<header class="page-header">
+<div class="container">
+<h1>Jadwal Multimedia</h1>
+<p>Jadwal pelayanan dan pembagian tugas Tim Multimedia.</p>
+</div>
+</header>
+<main class="section" style="padding-top:0">
+<div class="container">
+<div class="toolbar">
+<div class="search-field">
+<input type="search" id="search-jadwal" placeholder="Cari kegiatan atau nama...">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+</div>
+<select id="filter-jadwal">
+<option value="">Semua Jadwal</option>
+<option value="mendatang">Mendatang</option>
+<option value="selesai">Selesai</option>
+</select>
+</div>
+<div class="timeline" id="jadwal-list"></div>
+</div>
+</main>
+<footer id="site-footer"></footer>
+<script type="module">
+import{initNavbar,initFooter}from"./js/utils.js";
+initNavbar("jadwal");initFooter();
+</script>
+<script type="module" src="js/jadwal.js"></script>
+</body>
+</html>

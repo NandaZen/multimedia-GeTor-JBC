@@ -1,0 +1,54 @@
+<!-- lagu.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kumpulan Lagu | Multimedia Gereja Toraja Jemaat Batam Centre</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<nav id="site-nav"></nav>
+<header class="page-header">
+<div class="container">
+<h1>Kumpulan Lagu</h1>
+<p>Cari lagu dan akses slide untuk kebutuhan pelayanan.</p>
+</div>
+</header>
+<main class="section" style="padding-top:0">
+<div class="container">
+<div class="toolbar">
+<div class="search-field">
+<input type="search" id="search-lagu" placeholder="Cari judul atau nomor lagu...">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+</div>
+<select id="filter-kategori"><option value="">Semua Kategori</option></select>
+<select id="filter-bahasa"><option value="">Semua Bahasa</option></select>
+<select id="sort-lagu"><option value="nomor">Urutkan: Nomor</option><option value="judul">Urutkan: Judul</option></select>
+</div>
+<div class="card-grid" id="lagu-grid"></div>
+</div>
+</main>
+<div class="modal-overlay" id="modal-overlay">
+<div class="modal-box">
+<button class="modal-close" id="modal-close" aria-label="Tutup">&times;</button>
+<div class="modal-head">
+<img class="modal-cover" id="modal-cover" alt="">
+<div class="modal-title-group">
+<h2 id="modal-title"></h2>
+<div class="card-tags" id="modal-tags" style="margin-top:10px"></div>
+</div>
+</div>
+<div class="slide-gallery" id="slide-gallery"></div>
+</div>
+</div>
+<div class="lightbox" id="lightbox"><img id="lightbox-img" alt="Slide penuh"></div>
+<footer id="site-footer"></footer>
+<script type="module">
+import{initNavbar,initFooter}from"./js/utils.js";
+initNavbar("lagu");initFooter();
+</script>
+<script type="module" src="js/lagu.js"></script>
+</body>
+</html>
